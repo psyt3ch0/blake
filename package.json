@@ -8,10 +8,24 @@
   },
   "dependencies": {
     "blake3": "^2.1.7",
+    "browser-resolve": "^2.0.0",
+    "esmify": "^2.1.1",
+    "less": "^4.1.2",
+    "primeflex": "^2.0.0",
+    "primeicons": "^4.1.0",
+    "primevue": "^3.7.0",
+    "sass": "^1.42.1",
     "vue": "^3.2.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
     "vite": "^2.6.4"
+  },
+  "build": {
+    "rollupOptions": {
+      "external": [
+        "vue"
+      ]
+    }
   }
 }
